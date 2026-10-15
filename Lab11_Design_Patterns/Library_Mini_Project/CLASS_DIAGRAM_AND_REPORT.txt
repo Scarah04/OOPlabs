@@ -1,0 +1,88 @@
+LIBRARY MANAGEMENT SYSTEM - CLASS DIAGRAM AND REPORT
+=====================================================
+
+1. OBJECTIVE
+Build a small but complete application that combines classes, encapsulation,
+inheritance, abstraction, polymorphism, interfaces, custom exceptions, collections,
+streams and file I/O (Labs 1 to 10).
+
+2. CLASS DIAGRAM (text form)
+
+                    <<interface>>
+                     Borrowable
+                  + borrow(Member)
+                  + giveBack()
+                         ^
+                         | implements
+                 <<abstract>>
+                  LibraryItem
+        - id : String        (final)
+        - title : String     (final)
+        - available : boolean
+        + loanPeriodDays() : int   (abstract)
+        + getType() : String       (abstract)
+        + borrow(Member), giveBack(), toString()
+              ^                         ^
+              | extends                 | extends
+            Book                       Dvd
+   loanPeriodDays() = 21        loanPeriodDays() = 7
+
+   Member 1 ------------ 0..3 Loan * ------------ 1 LibraryItem
+   - id, name                 - member, item
+   - loans : List<Loan>       - borrowedOn, dueOn
+   + MAX_LOANS = 3            + isOverdue(today)
+
+   Library  (service class)
+   - items   : Map<String, LibraryItem>
+   - members : Map<String, Member>
+   - loans   : List<Loan>
+   + borrow(memberId, itemId, date) throws ItemNotAvailableException,
+                                           MemberLimitExceededException
+   + giveBack(itemId), overdue(today), searchByTitle(text)
+   + save(dir), load(dir)          (CSV persistence)
+
+   Exception <- ItemNotAvailableException
+   Exception <- MemberLimitExceededException
+
+   Main : text menu that uses Library.
+
+3. HOW EACH REQUIREMENT IS MET
+- Book, Member, Loan with private fields, validation and toString:
+  fields are private; constructors reject empty ids/titles/names; toString() overridden.
+- Abstract LibraryItem with Book and Dvd, each with loanPeriodDays():
+  Book = 21 days, Dvd = 7 days (inheritance, abstraction, polymorphism).
+- Borrowable interface with borrow(Member) and giveBack(): implemented by LibraryItem.
+- Custom exceptions: ItemNotAvailableException (item already on loan) and
+  MemberLimitExceededException (more than 3 loans).
+- Maps keyed by id: Library keeps Map<String, LibraryItem> and Map<String, Member>.
+- CSV persistence: save() writes items.csv, members.csv, loans.csv on exit;
+  load() reads them at start (folder library_data).
+- Menu: add item, register member, borrow, return, list overdue, search by title (streams).
+
+4. MARKING GUIDE MAPPING
+- Correct class design (25): encapsulation, inheritance, interface, abstraction used.
+- Polymorphism (10): loanPeriodDays() and getType() resolved at run time; Loan computes due date.
+- Exceptions (15): two custom checked exceptions; IllegalArgumentException for unknown ids.
+- Collections and streams (15): HashMap, List, stream().filter().sorted().toList().
+- File persistence (15): data survives between runs (shown in RESULTS.txt).
+- Code quality (10): meaningful names, comments, no duplicated logic.
+- Report and class diagram (10): this document.
+
+5. TESTING SUMMARY
+Test                                   Expected                          Result
+Add 4 books and 1 DVD                  Items stored                      Pass
+Register member M1                     Member stored                     Pass
+Borrow 3 items                         Borrowed                          Pass
+Borrow a 4th item                      MemberLimitExceededException      Pass
+Borrow with unknown member             Error: No such member             Pass
+Borrow an item already on loan         ItemNotAvailableException         Pass
+Search "java"                          Matching titles, sorted           Pass
+Return an item                         Item available again              Pass
+Exit and restart                       Data and loans reloaded           Pass
+(See RESULTS.txt for the actual output.)
+
+6. CONCLUSION
+The project shows how the four OOP pillars work together. Encapsulation protects state,
+inheritance and abstraction remove duplication, polymorphism lets Library treat every
+item the same way, and exceptions, collections, streams and file I/O make it robust.
+Possible improvements: fines for overdue items, a database instead of CSV, a GUI.

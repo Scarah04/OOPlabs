@@ -1,0 +1,474 @@
+==================================================
+Lab01_Classes_and_Objects/Ex1_Car   [OK]
+==================================================
+Brand: Toyota, Year: 2018, Mileage: 60000 km
+Brand: Ford, Year: 1995, Mileage: 210000 km
+Brand: Honda, Year: 2022, Mileage: 15000 km
+
+==================================================
+Lab01_Classes_and_Objects/Ex2_Antique   [OK]
+==================================================
+Ford (1995) 210000 km, antique: true
+Honda (2022) 15000 km, antique: false
+
+==================================================
+Lab01_Classes_and_Objects/Ex3_Rectangle_Array   [OK]
+==================================================
+2.0 x 3.0 area=6.0 perimeter=10.0
+5.0 x 4.0 area=20.0 perimeter=18.0
+1.0 x 10.0 area=10.0 perimeter=22.0
+6.0 x 6.0 area=36.0 perimeter=24.0
+3.0 x 3.0 area=9.0 perimeter=12.0
+Largest: 6.0 x 6.0 area=36.0
+
+==================================================
+Lab01_Classes_and_Objects/Ex4_Reference_Copy   [OK]
+==================================================
+r1.width = 10.0
+Same object? true
+
+==================================================
+Lab01_Classes_and_Objects/Ex5_Person_Address   [OK]
+==================================================
+Tendai lives in Harare
+NullPointerException: Rudo has no address (null).
+Safe lookup for Rudo: unknown
+
+==================================================
+Lab02_Constructors_this_static/Ex1_Circle   [OK]
+==================================================
+a.radius = 2.5
+b.radius = 1.0
+
+==================================================
+Lab02_Constructors_this_static/Ex2_Static_Counter   [OK]
+==================================================
+Circles: 0
+Circles: 3
+
+==================================================
+Lab02_Constructors_this_static/Ex3_Employee   [OK]
+==================================================
+Employee#1 Unknown, General, $0.0
+Employee#2 Alice, General, $0.0
+Employee#3 Bob, IT, $0.0
+Employee#4 Carol, Finance, $4500.0
+Employee#5 Carol, Finance, $4500.0
+
+==================================================
+Lab02_Constructors_this_static/Ex4_Init_Blocks   [OK]
+==================================================
+main starts
+static block 1
+static block 2
+instance block 1
+instance block 2
+constructor
+--- second object ---
+instance block 1
+instance block 2
+constructor
+
+==================================================
+Lab02_Constructors_this_static/Ex5_Temperature_Factory   [OK]
+==================================================
+t1: 100.0 C = 212.0 F
+t2: 0.0 C = 32.0 F
+
+==================================================
+Lab03_Encapsulation/Ex1_Student_Marks   [OK]
+==================================================
+Farai: 70
+Rejected invalid marks: 150
+Rejected invalid marks: -5
+Farai: 85
+
+==================================================
+Lab03_Encapsulation/Ex2_Grade   [OK]
+==================================================
+Ann -> A
+Ben -> B
+Cat -> C
+Dan -> F
+
+==================================================
+Lab03_Encapsulation/Ex3_BankAccount_History   [OK]
+==================================================
+Opened with 100.0
+Deposit 50.0
+Withdraw 30.0
+Rejected withdrawal 1000.0
+Balance: 120.0
+Cannot modify history from outside.
+
+==================================================
+Lab03_Encapsulation/Ex4_ImmutablePerson   [OK]
+==================================================
+Original: Chipo (20)
+Copy:     Chipo (21)
+
+==================================================
+Lab03_Encapsulation/Ex5_Temperature_Kelvin   [OK]
+==================================================
+C: 25.0  F: 77.0
+Error: Below absolute zero: -300.0 C
+
+==================================================
+Lab04_Inheritance/Ex1_Person_Student   [OK]
+==================================================
+Name: Tawanda, Age: 40
+Name: Nyasha, Age: 20
+Course: Computer Science
+
+==================================================
+Lab04_Inheritance/Ex2_Teacher   [OK]
+==================================================
+Name: Nyasha, Age: 20
+Name: Mr Moyo, Age: 45
+
+==================================================
+Lab04_Inheritance/Ex3_Constructor_Order   [OK]
+==================================================
+Vehicle constructor
+Car constructor
+ElectricCar constructor
+
+==================================================
+Lab04_Inheritance/Ex4_Missing_Super   [OK]
+==================================================
+Dog name: Rex
+
+==================================================
+Lab04_Inheritance/Ex5_Stack_Composition   [OK]
+==================================================
+peek: 3
+pop: 3
+pop: 2
+pop: 1
+
+==================================================
+Lab05_Polymorphism/Ex1_Overload_Print   [OK]
+==================================================
+int: 5
+double: 3.14
+String: hello
+int[]: [1, 2, 3]
+
+==================================================
+Lab05_Polymorphism/Ex2_Animals   [OK]
+==================================================
+Cat says Meow
+Cow says Moo
+Duck says Quack
+
+==================================================
+Lab05_Polymorphism/Ex3_Payroll   [OK]
+==================================================
+Alice: 3000.0
+Bob: 1600.0
+Cleo: 500.0
+Total payroll: 5100.0
+
+==================================================
+Lab05_Polymorphism/Ex4_Field_vs_Method   [OK]
+==================================================
+Child method
+Parent field
+
+==================================================
+Lab05_Polymorphism/Ex5_PaymentProcessor   [OK]
+==================================================
+[instanceof] Charging card 1234-5678 $50.0
+[instanceof] Mobile money from 0771234567 $20.0
+[poly] Charging card 1234-5678 $50.0
+[poly] Mobile money from 0771234567 $20.0
+
+==================================================
+Lab06_Abstraction/Ex1_Shapes   [OK]
+==================================================
+Circle: area=28.27 perimeter=18.85
+Rectangle: area=20.00 perimeter=18.00
+Square: area=16.00 perimeter=16.00
+
+==================================================
+Lab06_Abstraction/Ex2_Flyable   [OK]
+==================================================
+Bird flaps its wings and flies
+Aeroplane uses engines and flies
+
+==================================================
+Lab06_Abstraction/Ex3_Accounts   [OK]
+==================================================
+SavingsAccount balance after fee: 148.0
+CurrentAccount balance after fee: 140.0
+
+==================================================
+Lab06_Abstraction/Ex4_Comparable   [OK]
+==================================================
+By name:  [Alex(90), Mary(55), Zodwa(70)]
+By marks: [Alex(90), Zodwa(70), Mary(55)]
+
+==================================================
+Lab06_Abstraction/Ex5_Default_Conflict   [OK]
+==================================================
+Hello from A
+Hello from B
+Hello from C
+
+==================================================
+Lab07_Exception_Handling/Ex1_Divide   [OK]
+==================================================
+Enter first integer: Enter second integer: Error: cannot divide by zero.
+
+==================================================
+Lab07_Exception_Handling/Ex2_Array_Index   [OK]
+==================================================
+20
+Index 5 is invalid (valid: 0..2)
+-1
+
+==================================================
+Lab07_Exception_Handling/Ex3_InvalidAge   [OK]
+==================================================
+Age 25 is valid
+Caught: Age -3 is outside 0 to 120
+Caught: Age 130 is outside 0 to 120
+Age 120 is valid
+
+==================================================
+Lab07_Exception_Handling/Ex4_InsufficientFunds   [OK]
+==================================================
+Balance: 60.0
+Error: Insufficient funds, short by 40.0
+
+==================================================
+Lab07_Exception_Handling/Ex5_Finally   [OK]
+==================================================
+in try
+in finally
+returned 1
+
+==================================================
+Lab08_Generics_Collections/Ex1_ArrayList_Stats   [OK]
+==================================================
+Sum: 61
+Max: 12
+Reversed: [2, 10, 5, 8, 12, 3, 7, 1, 9, 4]
+
+==================================================
+Lab08_Generics_Collections/Ex2_Remove_Duplicates   [OK]
+==================================================
+Original: [Ann, Ben, Ann, Cleo, Ben, Dan]
+Unique:   [Ann, Ben, Cleo, Dan]
+
+==================================================
+Lab08_Generics_Collections/Ex3_Generic_Stack   [OK]
+==================================================
+peek: c
+pop: c
+pop: b
+pop: a
+pop: 20
+
+==================================================
+Lab08_Generics_Collections/Ex4_Word_Frequency   [OK]
+==================================================
+the: 4
+dog: 2
+fox: 2
+and: 1
+barks: 1
+brown: 1
+jumps: 1
+lazy: 1
+over: 1
+quick: 1
+runs: 1
+
+==================================================
+Lab08_Generics_Collections/Ex5_Generic_BubbleSort   [OK]
+==================================================
+[1, 2, 5, 7, 9]
+[apple, banana, mango, pear]
+
+==================================================
+Lab09_Enums_Records_Nested/Ex1_Enum_Level   [OK]
+==================================================
+LOW: relax, nothing to do.
+MEDIUM: keep an eye on it.
+HIGH: act immediately!
+
+==================================================
+Lab09_Enums_Records_Nested/Ex2_Record   [OK]
+==================================================
+Student[name=Tino, age=21]
+a.equals(b): true
+a == b: false
+name component: Tino
+
+==================================================
+Lab09_Enums_Records_Nested/Ex3_Book_Equals   [OK]
+==================================================
+true
+false
+true
+Size: 2 -> [Java Basics [111], OOP in Java [222]]
+
+==================================================
+Lab09_Enums_Records_Nested/Ex4_LinkedList_Iterator   [OK]
+==================================================
+one
+two
+three
+
+==================================================
+Lab09_Enums_Records_Nested/Ex5_Coin_Change   [OK]
+==================================================
+41 cents -> {QUARTER=1, DIME=1, NICKEL=1, PENNY=1}
+99 cents -> {QUARTER=3, DIME=2, PENNY=4}
+5 cents -> {NICKEL=1}
+30 cents -> {QUARTER=1, NICKEL=1}
+
+==================================================
+Lab10_FileIO_Lambdas_Streams/Ex1_Save_Read_Lines   [OK]
+==================================================
+Line 1: Line 2: Line 3: Line 4: Line 5: --- Reading back from lines.txt ---
+12
+0
+Line one
+Line two
+Line three
+
+==================================================
+Lab10_FileIO_Lambdas_Streams/Ex2_Predicate_RemoveIf   [OK]
+==================================================
+[1, 3, 5, 7, 9]
+
+==================================================
+Lab10_FileIO_Lambdas_Streams/Ex3_Count_Lines_Words_Chars   [OK]
+==================================================
+File:       sample.txt
+Lines:      3
+Words:      9
+Characters: 52
+
+==================================================
+Lab10_FileIO_Lambdas_Streams/Ex4_Streams_Above_Average   [OK]
+==================================================
+Class average: 76.0
+Alex
+Bella
+Zodwa
+
+==================================================
+Lab10_FileIO_Lambdas_Streams/Ex5_CSV_Grade_Bands   [OK]
+==================================================
+Wrote report_band_A.txt
+Wrote report_band_B.txt
+Wrote report_band_C.txt
+
+==================================================
+Lab11_Design_Patterns/Library_Mini_Project   [OK]
+==================================================
+
+=== Library Menu ===
+1. Add item   2. Register member   3. Borrow   4. Return
+5. List overdue   6. Search by title   7. List all   0. Save and exit
+Choice: Type (book/dvd): Id: Title: Item added.
+
+=== Library Menu ===
+1. Add item   2. Register member   3. Borrow   4. Return
+5. List overdue   6. Search by title   7. List all   0. Save and exit
+Choice: Member id: Name: Member registered.
+
+=== Library Menu ===
+1. Add item   2. Register member   3. Borrow   4. Return
+5. List overdue   6. Search by title   7. List all   0. Save and exit
+Choice: Member id: Item id: Borrowed.
+
+=== Library Menu ===
+1. Add item   2. Register member   3. Borrow   4. Return
+5. List overdue   6. Search by title   7. List all   0. Save and exit
+Choice: BOOK B1: Java Basics [on loan]
+Member M1: Tino (1 loans)
+
+=== Library Menu ===
+1. Add item   2. Register member   3. Borrow   4. Return
+5. List overdue   6. Search by title   7. List all   0. Save and exit
+Choice: Search text: BOOK B1: Java Basics [on loan]
+
+=== Library Menu ===
+1. Add item   2. Register member   3. Borrow   4. Return
+5. List overdue   6. Search by title   7. List all   0. Save and exit
+Choice: Data saved to library_data. Goodbye.
+
+==================================================
+Lab11_Design_Patterns/Patterns_Demo   [OK]
+==================================================
+== Singleton ==
+Example University
+Same instance? true
+== Factory ==
+Circle area: 12.57
+Square area: 9.00
+== Strategy ==
+No discount: 100.0
+Student discount: 80.0
+== Observer ==
+Alice received: Lab 11 is published!
+Bob received: Lab 11 is published!
+
+SUMMARY: 52 programs ran OK, 0 failed
+==================================================
+Lab11 Library_Mini_Project - FULL DEMO (add items, borrow, 4th-loan limit, search, return, reload)
+==================================================
+=== Library Menu ===
+Choice: Type (book/dvd): Id: Title: Item added.
+=== Library Menu ===
+Choice: Type (book/dvd): Id: Title: Item added.
+=== Library Menu ===
+Choice: Type (book/dvd): Id: Title: Item added.
+=== Library Menu ===
+Choice: Type (book/dvd): Id: Title: Item added.
+=== Library Menu ===
+Choice: Type (book/dvd): Id: Title: Item added.
+=== Library Menu ===
+Choice: Member id: Name: Member registered.
+=== Library Menu ===
+Choice: Member id: Item id: Borrowed.
+=== Library Menu ===
+Choice: Member id: Item id: Borrowed.
+=== Library Menu ===
+Choice: Member id: Item id: Borrowed.
+=== Library Menu ===
+Choice: Member id: Item id: Cannot borrow: Tino already has 3 loans
+=== Library Menu ===
+Choice: Member id: Item id: Error: No such member: M2
+=== Library Menu ===
+Choice: No overdue items.
+=== Library Menu ===
+Choice: Search text: BOOK B1: Java Basics [on loan]
+DVD D1: Java Video [on loan]
+BOOK B2: OOP in Java [on loan]
+=== Library Menu ===
+Choice: Item id: Returned.
+=== Library Menu ===
+Choice: BOOK B2: OOP in Java [on loan]
+BOOK B3: Data Structures [available]
+BOOK B4: Algorithms [available]
+DVD D1: Java Video [on loan]
+BOOK B1: Java Basics [available]
+Member M1: Tino (2 loans)
+=== Library Menu ===
+Choice: Data saved to library_data. Goodbye.
+--- second run (data reloaded from CSV) ---
+=== Library Menu ===
+Choice: BOOK B2: OOP in Java [on loan]
+BOOK B3: Data Structures [available]
+BOOK B4: Algorithms [available]
+DVD D1: Java Video [on loan]
+BOOK B1: Java Basics [available]
+Member M1: Tino (2 loans)
+=== Library Menu ===
+Choice: Data saved to library_data. Goodbye.
+

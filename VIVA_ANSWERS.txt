@@ -1,0 +1,29 @@
+VIVA QUESTIONS AND MODEL ANSWERS (Appendix B)
+==============================================
+1. Class vs object? A class is a blueprint (fields + methods). An object is one instance of it.
+   Class information is in the JVM method area/metaspace; objects live on the heap; the
+   reference variable lives on the stack.
+2. Why no multiple inheritance of classes? It causes the diamond problem (ambiguity about
+   which inherited member to use). Interfaces solve it: a class may implement many interfaces
+   and must resolve default-method conflicts explicitly.
+3. Overloading vs overriding? Overloading: same name, different parameters, same class,
+   decided at compile time (print(int), print(String)). Overriding: subclass redefines an
+   inherited method with the same signature, decided at run time (Cat.sound()).
+4. Superclass has no no-arg constructor and subclass omits super(...)? Compile error, because
+   Java inserts super() automatically and it cannot be found. Call super(args) explicitly.
+5. Abstract class or interface? Abstract class for shared code/state among closely related
+   classes; interface for a capability that unrelated classes can share.
+6. Why override hashCode with equals? Equal objects must have equal hash codes, otherwise
+   HashSet/HashMap cannot find or de-duplicate them.
+7. Checked vs unchecked? Checked must be caught or declared (IOException, InvalidAgeException);
+   unchecked extend RuntimeException (NullPointerException, ArithmeticException).
+8. Generics and primitives / type erasure? Type parameters must be reference types, so use
+   Integer not int. Type erasure: the compiler removes type arguments after checking, so at run
+   time List<String> and List<Integer> are both just List.
+9. final? Variable: cannot be reassigned. Method: cannot be overridden. Class: cannot be extended.
+10. Dynamic method dispatch? The JVM picks the overridden method from the actual object type at
+   run time. Fields and static methods are resolved by the reference type at compile time.
+11. Functional interface? An interface with exactly one abstract method; a lambda is a short
+   implementation of that method (Predicate<T> p = x -> x > 3).
+12. try-with-resources vs try/finally? try-with-resources automatically closes any AutoCloseable
+   resource, even if an exception occurs, with less code and no forgotten close().
